@@ -7,6 +7,8 @@
 * 6/20/2012
 */
 
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700);
+
 /* Table of Content
 ==================================================
 	#Site Styles
@@ -19,24 +21,149 @@
 
 /* #Page Styles
 ================================================== */
+
+	body {
+		font-family: 'PT Sans Caption', sans-serif;
+	}
+
+	.header {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
 	.logo {
+		text-align: center;	
+	}
+
+	.logo img {
+		width: 250px;
+	}
+
+	.menu {
+
+	}
+
+	input[type=text] {
+		display: inline;
+			padding: 6px 4px;
+		  margin: 0;
+		  width: 250px;
+		  font-family: sans-serif;
+		  font-size: 16px;
+
+		  box-shadow: none;
+		  border-radius: none;
+		  color: #00B5D1;
+	}
+
+	#navcontainer {
 		
-		}
+		text-align: right;
+		margin-top: 45px;
+	}
 
-/* #Media Queries
-================================================== */
+	#navlist li {
+		display: inline;
+		list-style-type: none;
+		padding-right: 20px;
+	}
 
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	.title {
+		text-align: center;
+		color: #003D44;
+		padding-top: 50px;
+	}
 
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	.title h2 {
 
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	}
 
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	.stats {
+		height: 400px;
+		background-image: url(../images/planeback.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center; 
+	}
+
+	.product {
+		background-image: url(../images/foodback.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center; 
+		padding-bottom: 50px;
+	}
+
+	.value {
+		text-align: center;
+		background: rgba(0, 0, 0, 0.67);
+		color: #FFF;
+		padding-top: 10px;
+		margin-top: 20px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		margin-bottom: 50px;
+		font-size: 11px;
+	}
+
+	.buttons {
+		text-align: center;
+	}
+
+	.button {
+		background: #FFF;
+	}
+
+	.button:hover {
+		background: #00B5D1;
+		border: 1px solid #FFF;
+		color: #FFF;
+	}
+
+	.footer {
+		height: 150px;
+		background: #FFF;
+	}
+
+	.credit {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	#navBottom {
+		
+		text-align: center;
+	}
+
+	#navBottomList li {
+		display: inline;
+		list-style-type: none;
+		padding-right: 20px;
+	}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
