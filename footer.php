@@ -18,6 +18,6 @@
 <script src="card/lib/js/card.js"></script>
 <script src="card/lib/js/jquery.card.js"></script>
 <script src="js/main.js"></script>
-
+<!--  -->
 </body>
 </html>
