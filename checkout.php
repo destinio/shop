@@ -189,7 +189,7 @@
 </script>
 <!-- https://github.com/jessepollak/card -->
 <script src="js/card.js"></script>
-<<script>
+<script>
 	new Card({
             form: document.querySelector('form'),
             container: '.card-wrapper'

@@ -14,7 +14,7 @@ $_SESSION['total'] = 0;
 	<script>
 		// SHOUTLET API
     Shoutlet.conversions.track({
-      pageType: 'Order Confirmation'
+      pageType: 'confirmation page'
     });
 
 	</script>
