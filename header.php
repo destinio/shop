@@ -26,7 +26,7 @@ if (isset($_SESSION['cart'])) {
     <!-- Basic Page Needs
   ================================================== -->
     <meta charset="utf-8">
-    <title>altitude distribution</title>
+    <title>Altitude Distribution</title>
     <meta name="description" content="">
     <meta name="author" content="">
 

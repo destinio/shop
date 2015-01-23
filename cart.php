@@ -49,7 +49,7 @@ $_SESSION['cart'] = $cart;
 			    
 			  </tbody>
 			</table>
-			<h1>Total: <span class="checkout-price"><? echo $_SESSION['total']; ?></span></h1>
+			<h1>Total: $<span class="checkout-price"><? echo $_SESSION['total']; ?></span></h1>
 			<form action="checkout.php" method="get">
 			<a class="button" href="add.php">edit cart</a>
 			<input type="submit" name="checkout" value="Checkout">

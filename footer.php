@@ -1,9 +1,11 @@
 <div class="pageFull footer">
     <div class="container">
         <div class="credit">
-                Team Altitude - Shoutlet Hackathon 2015
+                <a href="team.php">Team Altitude</a> - Shoutlet Hackathon 2015
                 <br />
-                <a href="">skeleton</a> · <a href="">font-awesome</a> · <a href="">card</a>
+                <a href="http://getskeleton.com/">skeleton</a> · 
+                <a href="http://fortawesome.github.io/Font-Awesome/">font-awesome</a> · 
+                <a href="https://github.com/jessepollak/card">card</a>
             </div>
         </div>
     </div>
