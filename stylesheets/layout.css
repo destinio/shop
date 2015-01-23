@@ -197,6 +197,30 @@
 		background-position:0% -10%;
 	}
 
+	/* unvisited link */
+	.meals a:link {
+	    color: #FFF;
+	    text-decoration: none;
+	}
+
+	/* visited link */
+	.meals a:visited {
+	    color: #FFF;
+	    text-decoration: none;
+	}
+
+	/* mouse over link */
+	.meals a:hover {
+	    color: #00C0D7;
+	    text-decoration: none;
+	}
+
+	/* selected link */
+	.meals a:active {
+	    color: #FFF;
+	    text-decoration: none;
+	}
+
 	.prod1 {
 		background-image: url(../images/hummus.png);
 		
@@ -213,14 +237,24 @@
 
 	}
 
+	.things {
+		color:#00C0D7;
+	}
+
+	.desc {
+		padding: 40px;
+	}
+
 	.first {
-		
+
 
 	}
 
 	.second {
 
 	}
+
+
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

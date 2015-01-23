@@ -60,7 +60,6 @@ $_SESSION['cart'] = $cart;
 		<script>
 			// SHOUTLET API
     Shoutlet.conversions.track({
-      cid: 2877,
       pageType: 'Cart page'
     });
 		</script>

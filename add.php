@@ -59,7 +59,6 @@
 		<script>
 			// SHOUTLET API
 			Shoutlet.conversions.track({
-			  cid: 2877,
 			  pageType: 'add products'
 			});
 		</script>

@@ -13,7 +13,6 @@ $_SESSION['total'] = 0;
 	<script>
 		// SHOUTLET API
     Shoutlet.conversions.track({
-      cid: 2877,
       pageType: 'Order Confirmation'
     });
 
