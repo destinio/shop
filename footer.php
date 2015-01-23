@@ -15,8 +15,8 @@
 <!-- JavaScript
 ================================================== -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="card/lib/js/card.js"></script>
-<script src="card/lib/js/jquery.card.js"></script>
+<script src="js/card.js"></script>
+<script src="js/jquery.card.js"></script>
 <script src="js/main.js"></script>
 <!--  -->
 </body>
