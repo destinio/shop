@@ -32,17 +32,17 @@ $_SESSION['cart'] = $cart;
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td>Classic</td>
+			      <td><? echo $plans['p1_meal'][1] ?></td>
 			      <td><? echo $cart['p1_meal'] ?></td>
 			      <td>$<? echo $cart['p1_meal'] * $plans['p1_meal'][0] ?></td>
 			    </tr>
 			    <tr>
-			      <td>Savory</td>
+			      <td><? echo $plans['p2_meal'][1] ?></td>
 			      <td><? echo $cart['p2_meal'] ?></td>
 			      <td>$<? echo $cart['p2_meal'] * $plans['p2_meal'][0] ?></td>
 			    </tr>
 			    <tr>
-			      <td>Tapas</td>
+			      <td><? echo $plans['p3_meal'][1] ?></td>
 			      <td><? echo $cart['p3_meal'] ?></td>
 			      <td>$<? echo $cart['p3_meal'] * $plans['p3_meal'][0] ?></td>
 			    </tr>
@@ -56,4 +56,12 @@ $_SESSION['cart'] = $cart;
 			</form>
 		</div>
 		</div>
+<?php include 'js.php'; ?>
+		<script>
+			// SHOUTLET API
+    Shoutlet.conversions.track({
+      cid: 2877,
+      pageType: 'Cart page'
+    });
+		</script>
 <?php include 'footer.php';?>

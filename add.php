@@ -13,7 +13,7 @@
 			  <form action="cart.php" method="get">
 			  <tbody>
 			    <tr>
-			      <td>Classic</td>
+			      <td><? echo $plans['p1_meal'][1] ?></td>
 			      <td>
 			      	<select name="p1_meal">
 						<option <?php if (isset($cart['p1_meal']) && $cart['p1_meal'] == 0) { echo 'selected="selected"'; } ?>>0</option>
@@ -25,7 +25,7 @@
 			      </td>
 			    </tr>
 			    <tr>
-			      <td>Savory</td>
+			      <td><? echo $plans['p2_meal'][1] ?></td>
 			      <td>
 			      	<select name="p2_meal">
 			      	<option <?php if (isset($cart['p2_meal']) && $cart['p2_meal'] == 0) { echo 'selected="selected"'; } ?>>0</option>
@@ -37,7 +37,7 @@
 			      </td>
 			    </tr>
 			    <tr>
-			      <td>Tapas</td>
+			      <td><? echo $plans['p3_meal'][1] ?></td>
 			      <td>
 			      	<select name="p3_meal">
 			      		<option <?php if (isset($cart['p1_meal']) && $cart['p3_meal'] == 0) { echo 'selected="selected"'; } ?>>0</option>
@@ -55,4 +55,12 @@
 		    </div>
 		</div>
 		</div>
+<?php include 'js.php'; ?>
+		<script>
+			// SHOUTLET API
+			Shoutlet.conversions.track({
+			  cid: 2877,
+			  pageType: 'add products'
+			});
+		</script>
 <?php include 'footer.php';?>

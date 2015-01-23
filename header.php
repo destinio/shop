@@ -1,11 +1,16 @@
 <?php
 session_start();
 
-$plans = array('p1_meal' => array('7.99', 'Classic'),
-               'p2_meal' => array('8.99', 'Savory'),
-               'p3_meal' => array('9.99', 'Tapas'));
+if(!isset($_SESSION['customer_id'])) {
+    $_SESSION['customer_id'] = uniqid();
+}
+
+$plans = array('p1_meal' => array('7.99', 'The Veggie'),
+               'p2_meal' => array('8.99', 'Meat'),
+               'p3_meal' => array('9.99', 'Double Meat'));
 
 $cart = array();
+
 if (isset($_SESSION['cart'])) {
  $cart = $_SESSION['cart'];
 }
@@ -46,6 +51,13 @@ if (isset($_SESSION['cart'])) {
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <!-- JS
+    ==================================================== -->
+
+    <script>
+        var customer_id =  "<?php  echo $_SESSION['customer_id']; ?>";
+    </script>
 
 </head>
 <body>

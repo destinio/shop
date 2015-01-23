@@ -1,7 +1,4 @@
-<?php include 'header.php';
-
-
-?>
+<?php include 'header.php';?>
 	<div class="pageFull items">
 		<div class="container">
 			<h3>please provide credit card and delevery methods</h3>
@@ -15,17 +12,17 @@
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <td>Classic</td>
+			      <td><? echo $plans['p1_meal'][1] ?></td>
 			      <td><? echo $cart['p1_meal'] ?></td>
 			      <td><? echo $cart['p1_meal'] * $plans['p1_meal'][0] ?></td>
 			    </tr>
 			    <tr>
-			      <td>Savory</td>
+			      <td><? echo $plans['p2_meal'][1] ?></td>
 			      <td><? echo $cart['p2_meal'] ?></td>
 			      <td><? echo $cart['p2_meal'] * $plans['p2_meal'][0] ?></td>
 			    </tr>
 			    <tr>
-			      <td>Tapas</td>
+			      <td><? echo $plans['p3_meal'][1] ?></td>
 			      <td><? echo $cart['p3_meal'] ?></td>
 			      <td><? echo $cart['p3_meal'] * $plans['p3_meal'][0] ?></td>
 			    </tr>
@@ -57,7 +54,7 @@
 					</div>
 				</div>
 				<div class="row address">
-				    <div class="one-half column">
+				    <div class="one-half column first">
 				    		<span>billing</span><br />
 				    	    <input type="text" placeholder="first name" name="first_name" />
 				    	    <input type="text" placeholder="last name" name="last_name" />
@@ -68,7 +65,7 @@
 				    	    <input type="text" placeholder="zip" name="billing_zip" />
 
 				    </div>
-				    <div class="one-half column">
+				    <div class="one-half column second">
 							<span>shipping</span><br />
 				    	    <label><input type="checkbox" id="same_as_billing" /> Same as billing</label>
 				    	    <input type="text"	placeholder="first name" name="shipping_first_name" />
@@ -85,5 +82,22 @@
 			</form>
 		</div>
 </div>
+<?php include 'js.php'; ?>
+<script>
+	// SHOUTLET API
+    Shoutlet.conversions.track({
+      cid: 2877,
+      pageType: 'Checkout page'
+    });
+
+</script>
 <!-- https://github.com/jessepollak/card -->
+<script src="js/card.js"></script>
+<<script>
+	new Card({
+            form: document.querySelector('form'),
+            container: '.card-wrapper'
+        });
+</script>
+<script src="js/jquery.card.js"></script>
 <?php include 'footer.php';?>

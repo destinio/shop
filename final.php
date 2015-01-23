@@ -9,4 +9,13 @@ $_SESSION['total'] = 0;
 			
 		</div>
 	</div>
+
+	<script>
+		// SHOUTLET API
+    Shoutlet.conversions.track({
+      cid: 2877,
+      pageType: 'Order Confirmation'
+    });
+
+	</script>
 <?php include 'footer.php';?>

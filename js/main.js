@@ -1,9 +1,6 @@
 $(function() {
-    new Card({
-            form: document.querySelector('form'),
-            container: '.card-wrapper'
-        });
 
+    // ADDRESSES AND STUFF
     $("#same_as_billing").on("change", function(){
     if (this.checked) {
       $("[name='shipping_first_name']").val($("[name='first_name']").val());
@@ -16,5 +13,4 @@ $(function() {
       $("[name='shipping_country']").val($("[name='billing_country']").val());
     }
   });
-
 });
