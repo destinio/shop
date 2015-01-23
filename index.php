@@ -5,7 +5,7 @@
 		<div class="row meals">
 
 		        <div class="one-third column value">
-		          <a href="veggie"><h2 class="value-multiplier"><? echo $plans['p1_meal'][1] ?></h2></a>
+		          <a href="veggie.php"><h2 class="value-multiplier"><? echo $plans['p1_meal'][1] ?></h2></a>
 		          <div class="prod prod1"></div>
 
 		        </div>

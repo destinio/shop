@@ -1,0 +1,3 @@
+[submodule "lib/shoutletconversionsdk"]
+	path = lib/shoutletconversionsdk
+	url = http://git.dwieeb.com:180/dwieeb/shoutlettrackingsdk.git
