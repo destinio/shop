@@ -1,14 +1,16 @@
 <?php include 'header.php';?>
-	<div class="pageFull">
+	<div class="pageFull items">
 		<div class="container">
-			<table class="u-full-width">
+			<div>
+				<h3>please select the amount of packages you would like</h3>
+			<table align="center">
 			  <thead>
 			    <tr>
 			      <th>Package Name</th>
 			      <th>amount</th>
 			    </tr>
 			  </thead>
-			  <form action="cart.php" method="post">
+			  <form action="cart.php" method="get">
 			  <tbody>
 			    <tr>
 			      <td>Classic</td>
@@ -50,6 +52,7 @@
 			</table>
 			<input type="submit" name="submit" value="submit">
 		    </form>
+		    </div>
 		</div>
 		</div>
 <?php include 'footer.php';?>
