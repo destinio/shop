@@ -35,14 +35,14 @@
 
 				<form action="final.php" method="post">
 				<div class="row">
-					<div class="one-third column">
+					<div class="one-half column">
 						<div class="card-wrapper"></div>
 					</div>
-					<div class="two-thirds column">
+					<div class="one-half column">
 						<div class="form-container active">
-							<input placeholder="card number" type="text" name="number" size="40"><br />
-							<input placeholder="full name" type="text" name="name" size="40"><br />
-							<input placeholder="MM/YY" type="text" name="expiry" size="31">
+							<input placeholder="card number" type="text" name="number" size="34"><br />
+							<input placeholder="full name" type="text" name="name" size="34"><br />
+							<input placeholder="MM/YY" type="text" name="expiry" size="25">
 							<input placeholder="CVC" type="text" name="cvc" size="4" maxlength="4">
 						</div>
 					</div>
