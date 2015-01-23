@@ -10,7 +10,7 @@ $_SESSION['total'] = 0;
 			<h4>your order will be shipping soon</h4>
 		</div>
 	</div>
-
+<?php include 'js.php'; ?>
 	<script>
 		// SHOUTLET API
     Shoutlet.conversions.track({
