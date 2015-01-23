@@ -55,6 +55,25 @@
 		  border-radius: none;
 		  color: #00B5D1;
 	}
+	
+	.items
+	input[type="email"]
+	input[type="number"]
+	input[type="search"]
+	input[type="text"]
+	input[type="tel"]
+	input[type="url"]
+	input[type="password"]
+	textarea
+	select {
+		background: #00C0D7;
+		color:#FFF;
+		border: 1px solid #FFF;
+	}
+
+	.items input[type=text]:focus {
+		border: 1px solid #FFF;
+	}
 
 	#navcontainer {
 		

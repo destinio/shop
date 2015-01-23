@@ -4,9 +4,10 @@ $_SESSION['cart'] = array();
 $_SESSION['total'] = 0;
 
 ?>
-	<div class="pageFull">
+	<div class="pageFull items">
 		<div class="container">
-			
+			<h2>Thank You</h2>
+			<h4>your order will be shipping soon</h4>
 		</div>
 	</div>
 
